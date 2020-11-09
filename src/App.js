@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import React,{useState}  from 'react';
 import './App.css';
-
+import {Button} from './components/Button';
+import {CardApp} from './components/GitCard'
 function App() {
+  const [couter, setCounter] = useState(0);
+  const clickHandler=(increment)=>setCounter(couter+increment);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <h1>this is app component</h1>
+        <Button clickHandler={clickHandler} message={couter} increment={1}/> 
+        <Button clickHandler={clickHandler} message={couter} increment={5}/>  */}
+        <CardApp></CardApp>
+
     </div>
   );
 }
