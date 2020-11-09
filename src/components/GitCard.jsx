@@ -25,6 +25,7 @@ function Form({ addData }) {
     const { id, avatar_url, company, login } = data;
     console.log(data);
     addData({ id, avatar_url, company, name: login });
+    setName("");
   };
   return (
     <form onSubmit={handlerSubmit}>
