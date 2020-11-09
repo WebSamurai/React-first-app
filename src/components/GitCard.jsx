@@ -33,7 +33,7 @@ function Form({ addData }) {
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
-      <button className="btn btn-primary">Add</button>
+      <button className="btn btn-primary">Add Person</button>
     </form>
   );
 }
